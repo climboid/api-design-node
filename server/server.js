@@ -7,6 +7,7 @@ require('./middleware/appMiddlware')(app);
 
 // setup the api
 app.use('/api/', api);
+app.use(express.static('client'));
 // set up global error handling
 
 // export the app for testing
